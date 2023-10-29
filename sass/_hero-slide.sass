@@ -1,0 +1,148 @@
+.hero-slide
+  box-sizing: border-box
+  position: relative
+  padding: 14.5rem 0 0
+  display: flex
+  &__container
+    position: relative
+    width: 100%
+  &__content
+    max-width: 45rem
+  &__title
+    font-size: 4.8rem
+    font-weight: 500
+    margin: 0 0 4rem
+  &__text
+    font-family: Roboto, sans-serif
+    font-size: 2.4rem
+    margin: 0 0 4.8rem
+  &__save
+    position: absolute
+    top: -9.7rem
+    right: 2.6rem
+    padding: 1.6rem
+    border-radius: .8rem
+    background-color: #4A86FF
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 0
+    color: #FFF
+    z-index: 10
+    &-header
+      text-transform: uppercase
+      margin-bottom: 3.2rem
+    &-amount
+      font-size: 3rem
+      font-weight: 700
+  &__servers
+    position: absolute
+    min-width: 25.6rem
+    min-height: 25.6rem
+    top: -8.9rem
+    right: 16.4rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: 0
+    padding: 6.4rem 7.05rem 9.1rem
+    z-index: 9
+    &::after
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: -2
+      border-radius: 50%
+      box-shadow: .5rem .4rem 1.5rem rgba(239, 57, 89, 0.40)
+      backdrop-filter: blur(.75rem)
+    &-count
+      font-size: 4.8rem
+      font-weight: 500
+      margin-bottom: 0.7rem
+    &-header
+      color: #EF3959
+      font-size: 3rem
+  &__bandwidth
+    position: absolute
+    min-width: 25.6rem
+    min-height: 25.6rem
+    padding: 7.2rem 5.15rem
+    margin: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    top: 5.5rem
+    right: 2.6rem
+    z-index: 5
+    &>:not(:last-child)
+      margin-bottom: 1.6rem
+    &-header
+      color: #4A86FF
+    &-count
+      font-size: 3rem
+      font-weight: 500
+  &__сountries
+    position: absolute
+    display: flex
+    min-width: 16rem
+    min-height: 16rem
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: 0
+    top: 13.5rem
+    right: 41.4rem
+    padding: 4rem
+    &::after
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: -2
+      border-radius: 50%
+      box-shadow: -.5rem .7rem 2rem rgba(74, 134, 255, 0.30)
+      backdrop-filter: blur(.75rem)
+    &-count
+      font-size: 3rem
+      font-weight: 500
+      margin-bottom: 0.8rem
+    &-header
+      color: #EF3959
+  &__guarantee
+    position: absolute
+    display: flex
+    min-width: 19.2rem
+    min-height: 19.2rem
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    top: 22.3rem
+    right: 19rem
+    padding: 7.8rem .6rem 7rem .2rem
+    margin: 0
+    z-index: 7
+    &::after
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: -2
+      border-radius: 50%
+      backdrop-filter: blur(.75rem)
+      box-shadow: .2rem .2rem 1.5rem #A4C2FF
+      background-color: rgba(255, 255, 255, .4)
+    &-header
+      display: block
+      max-width: 18.4rem
+      text-align: center
+      color: #4A86FF
+      font-weight: 700

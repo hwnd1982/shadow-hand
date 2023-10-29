@@ -1,0 +1,90 @@
+.circle-inset
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: -1
+
+.circle-center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: -1
+
+.get-it-now
+  position: relative
+  display: inline-block
+  padding: 1.5rem 3.2rem
+  font-family: Roboto, sans-serif
+  font-size: 2.4rem
+  border: none
+  border-radius: 72px
+  cursor: pointer
+  overflow: hidden
+  z-index: 1
+  &._red
+    color: #fff
+    background-color: #EF3959
+    border: .1px solid #EF3959
+    box-shadow: 0 0 4rem 0 rgba(239, 57, 89, 0.40)
+  &._trans
+    color: #EF3959
+    background-color: rgba(239, 57, 89, 0.00)
+    border: .1px solid #EF3959
+
+.swiper-button
+  position: relative
+  width: 6.4rem
+  height: 6.4rem
+  border-radius: 50%
+  border: none
+  padding: 0
+  background-color: #fff0
+  &-arrow
+    width: 6.4rem
+    height: 6.4rem
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #fff
+    opacity: .4
+    border-radius: 50%
+    filter: blur(.75rem)
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    border-radius: 50%
+    z-index: -1
+    transition: .4s
+  &:disabled
+    &::before
+      box-shadow: none
+
+.swiper-left
+  &::before
+    box-shadow: 0 0 1.5rem .25rem rgba(74, 134, 255, 0.30)
+
+.swiper-right
+  &::before
+    box-shadow: .2rem .2rem 1rem .25rem rgba(74, 134, 255, 0.30)
+
+.circles-on-the-water
+  position: absolute
+  top: var(--top)
+  left: var(--left)
+  height: var(--size)
+  width: var(--size)
+  border-radius: 50%
+  background-color: #fff5
+  transform: translate(-50%, -50%) scale(0)
+  z-index: -1

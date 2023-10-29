@@ -1,0 +1,41 @@
+.ticker
+  overflow: hidden
+  min-height: 6rem
+  +space-v(1.6rem)
+  &__string
+    position: relative
+    white-space: nowrap
+    min-height: 2.2rem
+    margin: 0
+    &_color
+      &_red
+        color: #EF3959
+  &__item
+    position: absolute
+    top: 0
+    transform: translateX(var(--start))
+    animation: marquee 20s linear infinite
+    &_type
+      &_main
+        --start: 0
+        --end: -100%
+      &_duplicate
+        --start: 100%
+        --end: 0
+    &_position
+      &_top
+        top: 0
+      &_bottom
+        bottom: 0
+  &__string_direction_left > &__item
+    animation-direction: normal
+    left: 0
+  &__string_direction_right > &__item
+    animation-direction: reverse
+    right: 0
+
+@keyframes marquee
+  0%
+    transform: translateX(var(--start))
+  100%
+    transform: translateX(var(--end))

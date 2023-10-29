@@ -1,0 +1,31 @@
+@mixin lg
+  @media (min-width: 768px)
+    @content
+
+@mixin hover
+  @media (hover: hover) and (pointer: fine)
+    &:hover
+      @content
+
+@mixin space-h($space)
+  @content
+  &>:not(:last-child)
+    margin-right: $space
+
+@mixin space-v($space)
+  @content
+  &>:not(:last-child)
+    margin-bottom: $space
+
+@mixin text-linear($size: 100%)
+  background-size: $size
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip: text
+  text-fill-color: transparent
+
+@mixin text-line-overflow($count)
+  overflow: hidden
+  display: -webkit-box
+  -webkit-line-clamp: $count
+  -webkit-box-orient: vertical
