@@ -1,6 +1,6 @@
 export const clickAnimation = () => {
   document.addEventListener('click', e => {
-    const button = e.target.closest('.get-it-now');
+    const button = e.target.closest('.get-it-now, .choose-the-plan, .ask-a-question');
     
     if (!button) return;
   
